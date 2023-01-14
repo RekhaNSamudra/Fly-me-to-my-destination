@@ -15,11 +15,15 @@ Step 1: Initialize the variables required
 
 * totalAirports -> represents the size of the array
 * maxReachableAirport -> represents the maximum possible destination airport which is reachable with the fuel available at the current airport
+    
     maxReachableAirport = arr[0];
 * fuel -> represents the amount of fuel available to make the moves(change the planes)
+    
     fuel = arr[0]; //updates the remaining fuel after each plane
-* planes -> number of planes required to reach the final or Nth airport from the current airport
+* planes -> number of planes required to reach the final or Nth airport from the current airport.
+            
             eg: if you are at index 0 (meaning at 1st airport) then the mininmum move/plane required to reach the Nth airport is 1, unless there is only one element/airport in the array where the minimum required planes becomes 0 because you don't need to move at all since both the current airport and destination airport will be same. 
+            
             Hence, planes = 1; intialized with 1
             
 Step 2: Iterating the array and updating the above variables accordingly
